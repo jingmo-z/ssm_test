@@ -48,4 +48,10 @@ public class UserController {
     public String login() {
         return "登录成功";
     }
+
+    @RequestMapping(value = "/login")
+    @ResponseBody
+    public String loginOut() {
+        return "登出成功";
+    }
 }
