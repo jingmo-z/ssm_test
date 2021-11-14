@@ -45,8 +45,7 @@ public class UserController {
 
     @RequestMapping(value = "/login")
     @ResponseBody
-    public String login(User user) {
-        userService.save(user);
+    public String login() {
         return "登录成功";
     }
 }
