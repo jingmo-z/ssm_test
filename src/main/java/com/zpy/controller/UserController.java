@@ -42,4 +42,10 @@ public class UserController {
         userService.save(user);
         return "保存成功";
     }
+
+    @RequestMapping(value = "/save", produces = "text/html;charset=utf-8")
+    @ResponseBody
+    public String loginOut() {
+        return "登出成功";
+    }
 }
