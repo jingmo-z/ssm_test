@@ -49,9 +49,15 @@ public class UserController {
         return "登录成功";
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/loginOut")
     @ResponseBody
     public String loginOut() {
         return "登出成功";
+    }
+
+    @RequestMapping(value = "/test")
+    @ResponseBody
+    public String test() {
+        return "test";
     }
 }
