@@ -42,4 +42,11 @@ public class UserController {
         userService.save(user);
         return "保存成功";
     }
+
+    @RequestMapping(value = "/login")
+    @ResponseBody
+    public String login(User user) {
+        userService.save(user);
+        return "登录成功";
+    }
 }
